@@ -1,0 +1,14 @@
+package isp.lab4.exercise3;
+
+public class Exercise3 {
+    public static void main(String[] args) {
+        PressureSensor ps1 = new PressureSensor();
+        PressureSensor ps2 = new PressureSensor();
+        PressureSensor ps3 = new PressureSensor();
+        TemperatureSensor ts1 = new TemperatureSensor();
+        TemperatureSensor ts2 = new TemperatureSensor();
+        MonitoringService ms = new MonitoringService();
+        System.out.println("The average of temperature sensors is " + ms.getAverageTemperatureSensor() + "% of the total number of sensors!");
+        System.out.println("The average of pressure sensors is " + ms.getAveragePressureSensor() + "% of the total number of sensors!");
+    }
+}
